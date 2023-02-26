@@ -1,4 +1,5 @@
-# Word Game
+# Word Game (Proyecto curso Joy of React)
+
 
 ## Joy of React, Project I
 
