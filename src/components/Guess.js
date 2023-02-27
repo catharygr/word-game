@@ -1,13 +1,34 @@
 import React from 'react'
 
+
 export default function Guess({guess}) {
-  return(
-      <div className='guess-results'>
-        {guess.map((palabra, index) => {
-          return(
-            <p key={index}>{palabra}</p>
-          )
-        })}
-      </div>
-  )
+
+  let splitLetters = guess 
+  ? guess.split('') 
+  : ['','','','','']
+
+
+return(
+  <p className='guess'>
+    {splitLetters.map((letra, index) => (
+      <span key={index} className='cell'>{letra}</span>
+    ) )}
+  </p>
+)
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
