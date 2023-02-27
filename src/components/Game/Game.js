@@ -25,7 +25,7 @@ function Game() {
   return (
   <>
     <div className='guess-results'>
-    {filaArray.map(num => <Guess key={num} guess={guesses[num]} />)}
+    {filaArray.map(num => <Guess key={num} answer={answer} guess={guesses[num]} />)}
 
     </div>
 
