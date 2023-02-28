@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Form({handleGuess}) {
+export default function Form({handleGuess, disabled}) {
   const [form, setForm] = React.useState('')
   
   function onSubmitForm(event) {
@@ -17,6 +17,7 @@ export default function Form({handleGuess}) {
     className="guess-input-wrapper">
     <label htmlFor="guess-input">Enter guess:</label>
     <input
+     disabled={disabled}
      id="guess-input"
      type="text"
      value={form}
